@@ -1,0 +1,371 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        
+            /* Pyöreät kulmat nappulaan*/
+        
+.pyöristys {border-radius: 6px;}        
+        
+
+        
+        .laatunappi{
+            color: #fff;
+            background-color: #E57200;
+        }
+        .laatunappi:hover {
+            background-color: darkorange;
+        }
+
+.laatunappi{
+  display: block;
+  width: 80px;
+  height: 35px;
+  line-height: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+        
+        
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        
+       /*body  {
+           background-image: url("bg.jpeg");
+        }*/
+        
+    
+      
+     .masthead{
+        background-size: cover;
+        min-height: 60vh;
+        position: relative;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+      }
+        
+      h1{
+          font-size: calc(1.25rem + 2vw);
+        }
+        
+     .color-overlay{
+            position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color: rbga(0,0,0,.2);
+        }
+    
+        @media (max-width: 768px) {
+            .masthead{
+                min-height: 30vh;
+            }
+            h1 {
+                font-size: calc(1.525rem + 0.5vw);
+            }
+            
+        }
+        
+        .kuvateksti{
+            text
+        }
+        
+        
+    .top-left{
+        position: absolute;
+        left:5%;
+        right: 5%;
+        top:85%;
+        color:rgb(0, 0, 0);
+        background:rgba(255, 255, 255, .99);
+        padding:2%;
+        text-shadow: 0px 0px 0px rgba(0,0,0,.99);
+        border-radius: 10px;
+        }
+        
+    .top-right{
+        position: absolute;
+        left:5%;
+        right: 5%;
+        top: 10%;
+        color:rgb(0, 0, 0);
+        background:rgba(255, 255, 245, .99);
+        padding:2%;
+        text-shadow: 0px 0px 0px rgba(0,0,0,.99);
+        border-radius: 10px;
+        }
+        
+        
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+         @media (min-width: 1000px) {
+          
+             .top-left{
+                left: calc(4rem + 9vw);
+                right: calc(4rem + 9vw);
+             }
+             
+        @media (max-width: 1450px) {
+          
+             .top-left{
+                left: calc(6rem + 11vw);
+                right: calc(6rem + 11vw);
+             }
+            
+        
+        @media (min-width: 1400px) {
+          
+             .top-left{
+                left: calc(6rem + 15vw);
+                right: calc(6rem + 15vw);
+             }
+        
+</style>
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  
+
+  <header style="background-color:#f9f9f9" class="blog-header py-3">
+     <div class="container" >
+
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="link-secondary" style="text-decoration: none;" href="Yhteystiedot.html">Ota yhteyttä </a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="index.html" style="text-decoration:none;"><span class="ass">Virginia</span></a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <!--<a class="link-secondary" href="#" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg> 
+                </a> -->
+                
+                <a href="index%20kopio.html" class="text-decoration-none"> 
+                <button class="laatunappi pyöristys">
+                Tilaa
+                </button>
+                </a>
+            </div>
+         </div>
+     </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-center">
+        
+      <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="index.html"></a>
+      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="uudet%20artikkelit.html"> Uudet artikkelit </a>
+      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="index%20kopio.html"> Tilaa </a>
+      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="Juho%20Peltola.html"> Kouvola </a>
+      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="uusi.html"> Yhteisö</a>
+      
+    </nav>
+  </div>
+
+
+<main class="container" style="border-top: 1px solid #e5e5e5;">
+    <br>
+  <div class="container">
+        
+ 
+       <div class="position-sticky" style="top: 2rem;">
+         
+        <div class="p-4 mb-3 bg rounded" style="background-color:#e0dede">
+            <div class="row">
+                        <div class="col">
+            <img class="rounded-circle shadow-4-strong float-right" alt="avatar2" src="p%C3%A4%C3%A4toimittaja2.JPG" style="width:100px" /></div>
+                   <div class="col">
+                      
+          <h4 class="fst-italic" style="color:#333">Päätoimittajalta</h4>
+                        <p class="mb-0" style="color:#333">Joni Hammar<br>10.5.2023</p>
+  
+               </div>
+   <div class="col">
+                </div>
+                  <div class="col">
+                     <br>
+                      <b>Kirjoitettu</b>
+                            <p class="mb-0" style="color:#333">10.5.2023</p>
+                </div>
+                 <div class="col">
+                       <br>
+                       <b>Lukuaika</b>
+                                 <p class="mb-0" style="color:#333">5min</p>
+                </div>
+                   <div class="col">
+                     
+                </div>
+                
+                
+          </div></div></div>
+       </div><br>
+    
+    <div class="row">
+        <div class="col-sm">
+    <div
+         class="masthead rounded"
+         style="background-image: url('globe.jpg');"
+    >
+       <div class="color-overlay d-flex justify-content-center centered align-items-center">
+           <h1>Savukkeiden alueellinen eroavaisuus</h1>
+          
+           <div class="top-left">
+        Ulkomaanmatkalle lähtiessään voi huomata tuttujen tuotteiden - kuten kokiksen - maistuvan ulkomailla hieman erilaiselta. Tämä makuaistimus ei kuitenkaan ole pelkkää matkan hurmetta tai mielikuvituksen tuotetta, vaan suurienkin yritysten tuotteissa on alueellista vaihtelua reseptin suhteen. Savukkeet eivät ole mikään poikkeus alueellisesta vaihtelusta puhuttaessa, ja amerikkalainen savuke onkin tunnetusti tuhti, mutta jopa Euroopan maiden välillä on laadullista vaihtelua saman brändin alla myytävissä savukkeissa. Mistä vaihtelu johtuu, ja miksi erot ovat suuria niinkin pienillä välimatkoilla?  
+            <br><br>
+ 
+            Vaikka EU:lla on yhteiset linjat tupakkapolitiikassan, on tupakan verotus kovasti maakohtaisesti vaihtelevaa. Suomessa tupakan verotus on kasvava tulojen lähde valtioille, vaikka tupakoinnin yleinen suosio ole länsimaissa kasvamaan päin. Viimeisen 10 vuoden aikana on tupakkaveron tuotto kasvanut liki 50% ja viime vuonna valtion kassaan kilahti runsaat 1,1 miljardia. Tupakkaa siis verotetaan yhä kovemmin, mutta mikä sen vaikutus on käytännössä itse tupakkaan?
+            <br><br>
+               <br>
+            <h4 class="text-center">"Nautitaanko Suomessa Euroopan lokaisimpia savukkeita?" </h4>  
+            <br><br>
+            Vaikka alla olevissa kuvaajissa ei ole suhteutettu askin hintaa elintasoon – eli ei voida päätellä kuinka suuren loven se todella tekee kansalaisen kukkaroon – voidaan niistä päätellä Euroopan rapaisimmat savukkeet. 
+            
+               <br><br>
+            Euroopan halvin savuke on euromääräisesti Bulgariassa, mutta sekään ei vielä tarkoita bulgarialaisen tupakan olevan erityisen huonoa, saati yksioikoisen halpaa bulgarialaisille. Bulgarialaisen tupakan hintaan vaikuttaa elintason lisäksi se seikka, että Bulgaria on tupakan tuottajamaa.  Kun tuotanto on jokseenkin paikallista ja ketjussa on vähemmän välikäsiä, voitaneen päästä halpaan hintaan ilman sikuria savukkeessa.  
+               <br><br>
+            Suomessa puolestaan nautitaan Euroopan kitkerimpiä savukkeita - ainakin mitä veroihin tulee - sillä tupakkavero on päätähuimaavat 72%, johon lisätään alv, varsin kohtuulliset 19%.  						Veroprosentin ja laatu- kysymyksen konkretisoimiseksi voidaan esittää ajatusleikki: jos ruotsalainen aski – nettohinnaltaan 1.63€ - myytäisiin Suomen veroprosentilla yht. 100%, olisi sen hinta 16,30€. Minkälaista lokaa mahtaakaan suomalainen savuke pitää sisällään, kun nettohinta ajetaan 81 senttiin! Suomalaisella elintasolla moisella rahasummalla ei paljoa saa. 
+               <br><br>
+            Keskimääräisesti suurin veroton hinta askille taas on Irlannissa, (2,06€) mikä saa ajattelemaan savukkeen jollakin tapaa paremmaksi kuin Suomessa. Naama ei kuitenkaan voi vääntyä kovin leveään hymyyn, kun on maksanut askista yli 12€, mikä on tämän päivän arkea Irlannissa.
+            <br><br>
+            Viereisessä veronmaksajain keskusliiton julkaisemassa kuvaajassa näkyy EU maittain savukkeiden hinnan rakenne euromääräisinä osuuksina, eli kuinka paljon askista on tupakan hinta, tupakkaveron hinta ja ALV hinta. Tässä kohtaa toistan sanaa hinta, sillä se on hieman vaikeasti sulava asia.
+               <br><br><br>
+               <p><strong> Tupakkavero - Tupakka-askin verojen ja nettohinnan rakenne euroissa. </strong></p>
+            <img src="savukegraafi1.png" class="float-right" style="width:100%" />
+            <br>
+            <p style="color:gray"><small> Lähde: veronmaksajat.fi </small></p>
+            <br>
+            
+            <p><strong> Tupakkavero - Tupakka-askin verojen ja nettohinnan rakenne prosenteissa. </strong></p>
+            <img src="savukegraafi2.png" class="float-right" style="width:100%" />
+            <br>
+            <p style="color:gray"><small>Lähde: veronmaksajat.fi </small> </p>
+            <br>
+               
+            Hypoteesina siis pitkä filtteri tässä kuvaannollisessa tupakassa heijastelee “hyvää” tupakkaa, valkea paperi politiikkaa ja harmaa tuhka maakohtaista alvia. Verohan on tupakassa ollut aikojen alusta asti ja se on ajatuksena yhteiseen hyvään, mutta miltä näyttää kenenkin “ideaali” savuke tässä kohden? Miltä maistuu mikäkin näistä?
+            <br><br>
+            Suomalaisesta askista on 81 senttiä itse tupakan hinta paketointeineen, 6,37€ tupakkaveroa ja 1,72€ alvia.   Alemmassa kuvaajassa on eritelty em. tupakan “osasten” suhdetta hintaan prosentein. Nostona voimme todeta Suomessa olevan EU maista toiseksi suurin tupakkaveron osuus, 72 %, korkein taas Tanskassa, 73%. Luxemburgissa on puolestaan korkein nettohinnan osuus 31 %, ja toisinaan verrokkimainamme pidetyt Ruotsi ja Saksa seuraavat 27% ja 30% nettohinnan osuuksin.  Vertailkaamme siis käytännössä länsinaapurimme ja vanhan aseveljemme askeja, jota ei ole pilattu liioin hinnalla tai veroilla. Jatkakaamme siis juttuun kolme kamelia. 
+               <br><br>
+               
+            <div class="col-sm-12 text-center">
+                <h2 class="text-center" >Lue artikkeli kolme kamelia!</h2>
+                   <a class="btn btn-outline-secondary" align="center" style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px" href="index%20kopio.html">Tilaa</a>
+          </div>
+
+
+           </div>
+           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 
+       </div>
+   
+ -                 </div>
+         
+    
+       
+            
+     
+   
+
+</main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <footer style="background-color:#f9f9f9;padding:50px;" class="blog-footer">
+  
+     
+       <a class="blog-header-logo text-black" href="#" >Virginia</a> <p>©2023</p> 
+    <img src="signaturef9f9f9.png" height="50" style="margin-top:-20px" /><br>
+     
+<div style="padding:0px;background-color:black;">
+    </div>
+ 
+</footer>
+      
+      
+      
+      
+      
+      
+      <center>
+      
+
+    
+    <footer style="background-color:rgba(0,0,42,0.99);width:50;height:100%;">
+
+    <div class="nav-scroller py-1 mb-2" >
+    <nav class="nav d-flex justify-content-center" style="">
+   
+      <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="index.html"></a>
+         <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="Yhteystiedot.html"> Yhteystiedot </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uudet%20artikkelit.html"> Uudet artikkelit </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="index%20kopio.html"> Tilaa </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="Juho%20Peltola.html"> Kouvola </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uusi.html"> Yhteisö </a>
+    </nav>
+        
+  </div>
+  
+
+      </footer>
+
+</center>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,308 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        
+        .parent{
+   position: relative;
+   width: 500px;
+}
+.img{
+  width:500px;
+    position: center;
+    
+}
+.top-left{
+   position: absolute;
+   left:20px;
+    right: 20px;
+   top:85%;
+    color:rgb(0, 0, 0);
+    background:rgba(246, 252, 255, .5);
+    padding:2%;
+    text-shadow: 0px 0px 0px rgba(0,0,0,.99);
+    
+    border-radius: 10px;
+    
+}
+.top-right{
+   position: absolute;
+   right:0;
+   top:0;
+    color:rgb(0, 0, 0);
+    background:rgba(246, 252, 255, .5);
+}
+.bottom-left{
+   position: absolute;
+   left:0;
+   bottom:0;
+}
+.bottom-right{
+   position: absolute;
+   right:0;
+   bottom:0;
+}
+        
+.masthead{
+        background-size: cover;
+        min-height: 60vh;
+        position: relative;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+      }
+        
+      h1{
+          font-size: 4rem;
+        }
+        
+     .color-overlay{
+            position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color: rbga(0,0,0,.2);
+        }
+    
+        @media (max-width: 768px) {
+            .masthead{
+                min-height: 30vh;
+            }
+            h1 {
+                font-size: calc(1.525rem + 3.3vw);
+            }
+        }        
+        
+       /*body  {
+           background-image: url("bg.jpeg");
+        }*/
+        
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  
+
+  <header style="background-color:#f9f9f9" class="blog-header py-3">
+        <div class="container" >
+
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" style="text-decoration: none;" href="#">Ota yhteyttä</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="index.html" style="text-decoration:none;"><span class="ass">Virginia</span></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px" href="index%20kopio.html">Tilaa</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-center">
+        
+      <a style="margin-right:70px;text-decoration: none;"  class="p-2 link-secondary" href="uudet%20artikkelit.html">Uudet artikkelit </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="uusi.html"> Toimitus </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="index%20kopio.html"> Tilaamisesta </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="index%20kopio.html"> Jälleenmyynti</a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="uusi.html"> Yhteisö</a>
+      
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+    <br>
+  <div class="container">
+        
+ 
+       <div class="position-sticky" style="top: 2rem;">
+         
+        <div class="p-4 mb-3 bg rounded" style="background-color:#e0dede">
+            <div class="row">
+                        <div class="col">
+            <img class="rounded-circle shadow-4-strong float-right" alt="avatar2" src="p%C3%A4%C3%A4toimittaja2.JPG" style="width:100px" /></div>
+                   <div class="col">
+                      
+          <h4 class="fst-italic" style="color:#333">Päätoimittajalta</h4>
+                        <p class="mb-0" style="color:#333">Joni Hammar<br>10.5.2023</p>
+  
+               </div>
+   <div class="col">
+                </div>
+                  <div class="col">
+                     <br>
+                      <b>Kirjoitettu</b>
+                            <p class="mb-0" style="color:#333">10.5.2023</p>
+                </div>
+                 <div class="col">
+                       <br>
+                       <b>Lukuaika</b>
+                                 <p class="mb-0" style="color:#333">5min</p>
+                </div>
+                   <div class="col">
+                     
+                </div>
+                
+                
+          </div></div></div>
+       </div><br>
+    
+          
+      <div
+         class="masthead rounded"
+         style="background-image: url('kessu2.jpeg');"
+    >
+       <div class="color-overlay d-flex justify-content-center align-items-center">
+           <h1>Testi</h1>
+         <div class="top-left">
+            Kuule kyrpä       Itselleni Itäkeskus ei ole koskaan näyttäytynyt erityisen edukkaana paikkana. Kaikki kuitenkin muuttui kun ystäväni esitteli minulle Puhoksen ostarin.
+        <br><br>
+        Itäkeskuksen takana on vanha 60-lukuinen ostari Puhos, joka viehättää vanhalle ostarille tyypillisellä sielukkuudella ja yhteisöllisyydellä, jonka voi aistia ilmassa.
+        <br><br>    
+        Itse ravintola Kirkukissa on rento meininki, eksoottiset loosit ja hyvä sapuska. Kirsikkana kakun päällä on shisha Sali, jonne vetäytyessä ruuan jälkeen tee kupposelle voi tuntea henkisten ja fyysisten rasitteiden jäävän kauas taakse. Itämaisen musiikin säestäessä iltaa voi ravintolassa vierähtää pidempikin tovi. Kävijöille vapaat tammipelit eivät myöskään huononna kokemusta.
+        <br><br></div>
+         </div>    
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row">
+    <div class="col-sm-9">
+        <div class="parent">
+            <img src="Savukkeet4.jpeg" alt="" class="img mx-auto d-block">
+         <div style="" class="top-left"> Savukkeiden ongelma 
+        Itselleni Itäkeskus ei ole koskaan näyttäytynyt erityisen edukkaana paikkana. Kaikki kuitenkin muuttui kun ystäväni esitteli minulle Puhoksen ostarin.
+        <br><br>
+        Itäkeskuksen takana on vanha 60-lukuinen ostari Puhos, joka viehättää vanhalle ostarille tyypillisellä sielukkuudella ja yhteisöllisyydellä, jonka voi aistia ilmassa.
+        <br><br>    
+        Itse ravintola Kirkukissa on rento meininki, eksoottiset loosit ja hyvä sapuska. Kirsikkana kakun päällä on shisha Sali, jonne vetäytyessä ruuan jälkeen tee kupposelle voi tuntea henkisten ja fyysisten rasitteiden jäävän kauas taakse. Itämaisen musiikin säestäessä iltaa voi ravintolassa vierähtää pidempikin tovi. Kävijöille vapaat tammipelit eivät myöskään huononna kokemusta.
+        <br><br></div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-8">
+        
+    
+
+       
+      
+       
+       
+
+   </div>
+    
+    
+    
+      
+    <div class="col-sm-4"> 
+    <br><br>
+    
+        <img src="kian.JPG" class="float-right" style="width:300px" >
+        -Falafelin mukana tulee reilu leipä.
+        <hr>
+        <img src="ali.jpeg" class="float-right" style="width:300px" />
+        <br>
+        -Shisha sali on ravintolan helmi.
+    <br><br>
+        
+    
+     
+
+    </div> 
+</div>
+        
+
+        </div>
+
+    </div>
+</div>
+
+</main><br><br><br>
+      
+      <footer style="background-color:#f9f9f9;padding:50px;" class="blog-footer">
+  
+     
+       <a class="blog-header-logo text-black" href="#" >Virginia</a> <p>2023</p> 
+    <img src="signaturef9f9f9.png" height="50" style="margin-top:-20px" /><br>
+     
+<div style="padding:0px;background-color:black;">
+    </div>
+ 
+</footer>
+      
+      
+      
+      
+      <center>
+      
+
+    
+    <footer style="background-color:#333;height:50px;">
+
+    <div class="nav-scroller py-1 mb-2" >
+    <nav class="nav d-flex justify-content-center" style="">
+        
+      <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="uudet%20artikkelit.html">Uudet artikkelit </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Toimitus </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Tilaamisesta </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Jälleenmyynti</a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uusi.html"> Yhteisö</a>
+      
+    </nav>
+        
+  </div>
+  
+
+      </footer>
+
+</center>
+    
+  </body>
+</html>
