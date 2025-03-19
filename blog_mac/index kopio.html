@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="description" content="Virginia tilaus">
+  <meta name="author" content="Joni Hammar Virginia lehti">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Blog Template · Bootstrap v5.0</title>
+  <title>Tilaa virginia</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
 
@@ -159,7 +159,7 @@
         </p>
 
 
-        <select onchange="calculatePrice()" id="hintalista_arvo">
+        <select onchange="valintaMuuttui()" id="hintalista_arvo">
 
           <option id="kpl-1" value="1" >0</option>
           <option id="kpl-2" value="2" >0</option>
@@ -326,7 +326,9 @@
 
 
   <script>
-    function calculatePrice() {
+
+    // tätä funktiota kutsutaan kun käyttäjä valitsee kappalemäärän select-menusta
+    function valintaMuuttui() {
 
       console.log('valinta vaihtui')
 
@@ -372,22 +374,29 @@
     }
       
     let elt = document.getElementById("kpl-1")
-    elt.innerText = calculatePriceText(1) 
+    elt.innerText = calculatePriceText(1)
+    elt.setAttribute("price", calculatePrice(1))  
+    
       
     elt = document.getElementById("kpl-2")
     elt.innerText = calculatePriceText(2) 
+    elt.setAttribute("price", calculatePrice(2))  
       
     elt = document.getElementById("kpl-3")
-    elt.innerText = calculatePriceText(3) 
+    elt.innerText = calculatePriceText(3)
+    elt.setAttribute("price", calculatePrice(3)) 
     
     elt = document.getElementById("kpl-4")
-    elt.innerText = calculatePriceText(4) 
+    elt.innerText = calculatePriceText(4)
+    elt.setAttribute("price", calculatePrice(4)) 
       
     elt = document.getElementById("kpl-10")
-    elt.innerText = calculatePriceText(10) 
+    elt.innerText = calculatePriceText(10)
+    elt.setAttribute("price", calculatePrice(10)) 
     
     elt = document.getElementById("kpl-20")
-    elt.innerText = calculatePriceText(20) 
+    elt.innerText = calculatePriceText(20)
+    elt.setAttribute("price", calculatePrice(20))
       
       
   </script>
