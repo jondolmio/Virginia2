@@ -104,7 +104,7 @@
            
     <form action="http://localhost:3000/maksaminen">
             <div data-mdb-input-init class="form-outline mb-4">
-                <input type="hidden" name="tuote" value="2" class="form-control" />
+                <input id="hidden_kpl" type="hidden" name="kpl" value="" class="form-control" />
                 <div class="form-group row">
                     <label for="text1" class="col-4 col-form-label">Etunimi</label> 
                     <div class="col-8">
@@ -187,16 +187,17 @@
                      <br>
 <br>
           
-                <script>
+         <script>
             let kappalemäärä = sessionStorage.getItem('kappalemäärä'); 
             let hinta = sessionStorage.getItem('hinta'); 
         
             console.log(kappalemäärä)
-            
+             
+            document.getElementById('hidden_kpl').value = kappalemäärä;
             document.getElementById('kappalemäärä').innerText = kappalemäärä; 
-            
             document.getElementById('hinta').innerText = hinta;
-                </script>
+        </script>
+          
         </div></div></div></div>
 <br>
 
@@ -219,7 +220,7 @@
 
     
    <footer style="background-color:#f9f9f9;padding:50px;" class="blog-footer">
-       <a style="text-decoration:none;color:#333" class="blog-header-logo text" href="#" >Virginia</a> <p>©2023</p> 
+       <a style="text-decoration:none;color:#333" class="blog-header-logo text" href="#" >Virginia</a> <p>©2025</p> 
         <img src="signaturef9f9f9.png" height="50" style="margin-top:-20px" /><br>
             <div style="padding:0px;background-color:black;"></div>
     </footer>
