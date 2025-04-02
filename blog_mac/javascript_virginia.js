@@ -65,3 +65,4 @@ function valintaMuuttui() {
       sessionStorage.setItem('kappalemäärä', valinta.value);  
       sessionStorage.setItem('hinta', hinta);
 }
+
