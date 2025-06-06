@@ -1,504 +1,593 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hansa sail Sailing rostock">
-    <meta name="author" content="Joni Hammar">
-    <meta name="generator" content="Hammar">
-    <title>Hanse Sail Rostock</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hansa sail Sailing rostock">
+  <meta name="author" content="Joni Hammar">
+  <meta name="generator" content="Hammar">
+  <title>Hanse Sail Rostock</title>
 
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+  <link rel="canonical" href="www.virginialehti.com">
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
-    <style>
-        
-            /* Pyöreät kulmat nappulaan*/
-        
-.pyöristys {border-radius: 6px;}        
-        
+  <style>
+    /* Pyöreät kulmat nappulaan*/
 
-        
-        .laatunappi{
-            color: #fff;
-            background-color: #E57200;
-        }
-        .laatunappi:hover {
-            background-color: darkorange;
-        }
+    .pyöristys {
+      border-radius: 6px;
+    }
 
-.laatunappi{
-  display: block;
-  width: 80px;
-  height: 35px;
-  line-height: 30px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
-  letter-spacing: 0.5px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-}
 
-        
-        
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+
+    .laatunappi {
+      color: #fff;
+      background-color: #E57200;
+    }
+
+    .laatunappi:hover {
+      background-color: darkorange;
+    }
+
+    .laatunappi {
+      display: block;
+      width: 80px;
+      height: 35px;
+      line-height: 30px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #fff;
+      letter-spacing: 0.5px;
+      text-align: center;
+      position: relative;
+      transition: all .35s;
+    }
+
+
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-        
-       /*body  {
+    /*body  {
            background-image: url("bg.jpeg");
         }*/
-        
-    
-      
-     .masthead{
-        background-size: cover;
-        min-height: 60vh;
-        position: relative;
-        color: white;
-        text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
+
+
+    .masthead {
+      background-size: cover;
+      min-height: 60vh;
+      position: relative;
+      color: white;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    }
+
+    h1 {
+      font-size: calc(1.25rem + 2vw);
+    }
+
+    .color-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rbga(0, 0, 0, .2);
+    }
+
+    @media (max-width: 768px) {
+      .masthead {
+        min-height: 30vh;
       }
-        
-      h1{
-          font-size: calc(1.25rem + 2vw);
-        }
-        
-     .color-overlay{
-            position: absolute;
-         width: 100%;
-         height: 100%;
-         background-color: rbga(0,0,0,.2);
-        }
-    
-        @media (max-width: 768px) {
-            .masthead{
-                min-height: 30vh;
-            }
-            h1 {
-                font-size: calc(1.525rem + 0.5vw);
-            }
-            
-        }
-        
-        .kuvateksti{
-            text
-        }
-        
-        
-    .top-left{
-        position: absolute;
-        left:5%;
-        right: 5%;
-        top:100%;
-        color:rgb(0, 0, 0);
-        background:rgba(255, 255, 255, .99);
-        padding:2%;
-        text-shadow: 0px 0px 0px rgba(0,0,0,.99);
-        border-radius: 10px;
-        }
-        
-    .top-right{
-        position: absolute;
-        left:5%;
-        right: 5%;
-        top: 85%;
-        color:rgb(0, 0, 0);
-        background:rgba(44, 64, 116, .99);
-        padding:2%;
-        text-shadow: 0px 0px 0px rgba(0,0,0,.99);
-        border-radius: 10px;
-        }
-        
-        
+
+      h1 {
+        font-size: calc(1.525rem + 0.5vw);
+      }
+
+    }
+
+
+
+    .top-left {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      top: 100%;
+      color: rgb(0, 0, 0);
+      background: rgba(255, 255, 255, .99);
+      padding: 2%;
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, .99);
+      border-radius: 10px;
+    }
+
+    .top-right {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      top: 85%;
+      color: rgb(0, 0, 0);
+      background: rgba(44, 64, 116, .99);
+      padding: 2%;
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, .99);
+      border-radius: 10px;
+    }
+
+
     .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-}
-         @media (min-width: 1000px) {
-          
-             .top-left{
-                left: calc(4rem + 9vw);
-                right: calc(4rem + 9vw);
-             }
-             
-        @media (max-width: 1450px) {
-          
-             .top-left{
-                left: calc(6rem + 11vw);
-                right: calc(6rem + 11vw);
-             }
-            
-        
-        @media (min-width: 1400px) {
-          
-             .top-left{
-                left: calc(6rem + 15vw);
-                right: calc(6rem + 15vw);
-             }
-        
-</style>
-    
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: 1000px) {
+      .top-left {
+        left: calc(4rem + 9vw);
+        right: calc(4rem + 9vw);
+      }
+    }
+
+    @media (max-width: 1450px) {
+
+      .top-left {
+        left: calc(6rem + 11vw);
+        right: calc(6rem + 11vw);
+      }
+    }
+
+    @media (min-width: 1400px) {
+
+      .top-left {
+        left: calc(6rem + 15vw);
+        right: calc(6rem + 15vw);
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="blog.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
 
   <header style="background-color:#f9f9f9" class="blog-header py-3">
-     <div class="container" >
+    <div class="container">
 
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 pt-1">
-                <a class="link-secondary" style="text-decoration: none;" href="Yhteystiedot.html">Ota yhteyttä </a>
-            </div>
-            <div class="col-4 text-center">
-                <a class="blog-header-logo text-dark" href="index.html" style="text-decoration:none;"><span class="ass">Virginia</span></a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <!--<a class="link-secondary" href="#" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg> 
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="link-secondary" style="text-decoration: none;" href="Yhteystiedot.html">Ota yhteyttä </a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="index.html" style="text-decoration:none;"><span
+              class="ass">Virginia</span></a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <!--<a class="link-secondary" href="#" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg> 
                 </a> -->
-                
-                <a href="index%20kopio.html" class="text-decoration-none"> 
-                <button class="laatunappi pyöristys">
-                Tilaa
-                </button>
-                </a>
-            </div>
-         </div>
-     </div>
+
+          <a href="index%20kopio.html" class="text-decoration-none">
+            <button class="laatunappi pyöristys">
+              Tilaa
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-center">
-        
+
       <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="index.html"></a>
-      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="uudet%20artikkelit.html"> Uudet artikkelit </a>
-      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="index%20kopio.html"> Tilaa </a>
-      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="Juho%20Peltola.html"> Kouvola </a>
-      <a style="margin-right:70px;text-decoration:none;"class="p-2 link-secondary" href="uusi.html"> Yhteisö</a>
-      
+      <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="uudet%20artikkelit.html">
+        Uudet artikkelit </a>
+      <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="index%20kopio.html"> Tilaa
+      </a>
+      <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="Juho%20Peltola.html"> Kouvola
+      </a>
+      <a style="margin-right:70px;text-decoration:none;" class="p-2 link-secondary" href="uusi.html"> Yhteisö</a>
+
     </nav>
   </div>
 
 
-<main class="container" style="border-top: 1px solid #e5e5e5;">
+  <main class="container" style="border-top: 1px solid #e5e5e5;">
     <br>
-  <div class="container">
-        
- 
-       <div class="position-sticky" style="top: 2rem;">
-         
+    <div class="container">
+
+
+      <div class="position-sticky" style="top: 2rem;">
+
         <div class="p-4 mb-3 bg rounded" style="background-color:#e0dede">
-            <div class="row">
-                        <div class="col">
-            <img class="rounded-circle shadow-4-strong float-right" alt="avatar2" src="Joni%20Hammar.jpeg" style="width:100px" /></div>
-                   <div class="col">
-                      
-          <div class="col">
-                     <br>
-                      <h4>From the Editor</h4>
-                            <p class="mb-0" style="color:#333">Joni Hammar</p>
-                </div>
-                       
-  
-               </div>
+          <div class="row">
+            <div class="col">
+              <img class="rounded-circle shadow-4-strong float-right" alt="avatar2" src="Joni%20Hammar.jpeg"
+                style="width:100px" />
+            </div>
+            <div class="col">
 
-                  <div class="col">
-                     <br>
-                      <b>Written</b>
-                            <p class="mb-0" style="color:#333">30.9.2024</p>
-                </div>
-                 <div class="col">
-                       <br>
-                       <b>Reading time</b>
-                                 <p class="mb-0" style="color:#333">5 min</p>
-                </div>
-                   <div class="col">
-                     
-                </div>
-                
-                
-          </div></div></div>
-       </div><br>
-    
-    <div class="row">
-        <div class="col-sm">
-    <div
-         class="masthead rounded"
-         style="background-image: url('bima_suci_2.JPG');"
-    >
-       <div class="color-overlay d-flex justify-content-center centered align-items-center">
-           <h1>Hanse Sail Rostock</h1>
-          <br><br>
-        
-           <div class="top-left">
-                 <p style="color:gray"><small>Image © TZRW / Herbert Böhm</small></p>
-            I arrive in Rostock with a bus from Poland. After the last comradely goodbye with our ship’s cook, Uwe I enter the city. 
-            <br><br>
-            After ordering one of the best kebabs that I’ve had during my relatively short life I walk uptown to find hotel Sonne in the very heart of the city.
-             <br><br>
-            Still, I feel something is missing. I leave the room – after being very cozy and satisfied with the premises - out to the city. The old cobblestone street declines slowly and I can already smell the salty water. Soon I find what I’m looking for: the harbor with lovely sailing ships. Here I feel like home. 
+              <div class="col">
+                <br>
+                <h4>From the Editor</h4>
+                <p class="mb-0" style="color:#333">Joni Hammar</p>
+              </div>
 
-            <br><br>
-               
-                <h2 class="text-center">Sailing</h2>
-               
-            <br>
-               
-            A sail ship arrives to Rostock with torn sails, many a brave ship follow. The mare opens the beer keg and announces the 33th Hanse Sail began. 
-               <br><br>
-            The festival area starts from the city harbor and continues all the way up to Warnemünde's sand beaches, the fisher harbor, seafaring museum and the naval base Hohe Düne. 
-               <br><br>
-               <img src="Plan_HanseSail_Rostock-1.jpg" class="float-right" style="width:100%" />
-            <p style="color:gray"><small>Map of the Hanse Sail Rostock 2024</small></p>
-               
-            Walking along the dock is something that I could do forever. Swimming through the crowd I head towards Grossherzogin Elisabeth that has come a long way from Poland after finishing last leg of The Tall Ship Races in the third place. I go to greet my mate, Konstantin Meyer. Let’s ask the sailor: what is the sailing all about for him?
-               <br><br>
-                
-               
-            “Basically in 2022 I started my nautical studies – that’s when I started sailing at all. Since then, I have been sailing in smaller boats and I’ve done a couple of 10-day sailing trips with Lissi. (The nickname of Grossherzogin Elisabeth.) So generally, not a lot. 
-            <br><br>
-            We have the seafaring theory in school that we can put in practice onboard Lissi. That is something remarkable about Elsfleth, not every nautical school has that. 
-            <br><br>
-            Sailing is different here than on a commercial vessel, but the knots are still important these days. As a cadet on a commercial ship the sailors have a prejudice about you: as a European you can’t do knots, and you don’t know how to paint or even do the rust chipping. 
-            As a part of my apprenticeship, I was working on a gas tanker for three months. I joined the Gaschem Atlantic in Brazil, and we went up the coast to USA then Mexico and then USA again. Our last voyage was to Dunkirk, France where I left. Then I spent a night in Lübeck and went onboard a small general cargo vessel for another three months.
-            <br><br>
-            <img src="konstantin_meyer.jpeg" class="float-right" style="width:100%" />
-            <p style="color:gray"><small> Meyer onboard the Gaschem Atlantic. </small></p>
-               
-            On Lissi you learn the knots, painting and rust chipping and you build a bridge towards the sailors making it easier to connect. Then they are more willing to show you things and it’s nice to be a bit more part of the crew with the experience you have gained sailing.”
-            <br><br>
-            “I recommend the Tall Ship Races and sailing onboard Lissi. It’s going to be a hard start if you don’t speak German but even for the nationals have to learn the many terms. You can learn a lot and it’s going to be a lot of fun. 
-            If you aren’t sure, give it a try. It’s not too expensive. Maybe just for a weekend trip and then you already can get a feeling if it is for you. If it is, you can join a club so it doesn’t cost anything, and you can create a new passion. “
-            <br><br>
-            I also have the honor to meet the ship’s captain, Nils Karsten. 
-            <br><br> 
-            “Usually, I’m working in a cruise ship doing cruises as a chief officer on deck and navigation. I 
-            sail the Grossherzogin Elisabeth one to four times per year, because I’m also very active on another museum ship in Cuxhaven. This takes also a lot of time and of course I have to also be a little at home, while I’m already three months away from home because of my job.”
-             <br><br>
-            The captain also had a startup in Finland – in the partner land of the Hanse Sail 2024:
-                <br><br>
-            “I did the startup of the new Mein Schiff 1 and the new Mein Schiff 2 from the Turku shipyard in 2018 and 2019. Now this year they are just going to deliver Mein Schiff 7 also from Turku.
-                <br><br>
-            We did the delivery and the commissioning. We went there to do the inspections of the vessel and checked that everything was according to the contract. If it wasn’t the shipyard had to follow up and when they did, we signed.”
-               <br><br>
-               <img src="captain_karsten.jpg" class="float-right" style="width:100%" />
-            <p style="color:gray"><small> Captain Nils Karsten and Joni Hammar onboard the Grossherzogin Elisabeth.</small></p>
-                <br><br>
-            “Basically, I inspected the marine department but not any passenger cabins. However, the outside areas are a part of the deck department, so we inspected all the balconies for example. It’s also a hell of a work in -20°C in the wintertime – I don’t need to tell you.”  Said captain Karsten with a comradely laughter. 
-               <br><br>
-            What does the sea mean for him? 
-               <br><br>
-            “I like the peace - if there is no bad weather - there can be some peaceful moments of the whiteness at sea. “
-               <br><br>
-            What makes Hanse Sail remarkable, is to witness the great tall ships as they once again sail to the port. To meet the men and women who sail the ships and enjoy the hospitality of the locals of Rostock. 
-               <br><br>
-            In the bar the locals buy us many rounds making it hard to keep up. They the tell me the best off-sight attractions of the 13th century city which keeps me occupied for two whole days. The locals save my behind as my groceries fall in the pavement and the warm spirit just echoes from the man selling me a bratwurst. Pleasant people I must say.
-            <br><br>
-              
-               <h5 style="color:gray" class="text-center">Useful vocabulary [Ger - Fin]</h5>
-               <p style="color:gray" class="font-italic"><small></small>
-           -	Moin!   –   Moi!
-                <br>
-            -	Ich hätte ein grosses Fassbier   –   Yksi kylmä huurteinen
-                <br>
-        	-	Danke  –   Kiitos
-                <br>
-           -	Bitte   –   Ole hyvä
-                <br>
-            -	Prost!   –   Kippis!
-                   <br>
-            -	Ja  /  Nein   –   Joo  /  Ei
-                </p>
-               
-                <h5 style="color:gray" class="text-center">Highlights of Hanse Sail</h5> 
-               <p style="color:gray" class="font-italic"><small></small>
-            - Warnemündes great sandcoasts with their massive beach partys
-                <br>
-            -	Over 200 performers on stage
-                <br>
-            -	Over 100 sailing ships from 1800’s till this day open and free to visit
-                <br>
-            -	Sail onboard as passenger, crew or just overnight in a ship
-                <br>
-            -	The  nightlife and many pubs of Rostock
-                </p>
-               
-               <h5 style="color:gray" class="text-center">Specialities</h5>
-               <p style="color:gray" class="font-italic"><small></small>
--	Smoker friendly city & bars
-               <br>
--	Evident sailor spirit
-               <br>
--	Hanse City form the 1200’s 
-               <br>
--	Pleasant coffee shops
-               <br>
--	Affordable prices
-               <br>
--	Stress free public transport – Bus & train tickets for the entire city are included in the city tax
-               <br>
--	Partys till until morning
-               <br>
--	Lots of street art
-                </p>
-               
-          <br><br>
-               
-           Later I’m privileged to meet commander Robert Lehmann from of the Hohe Hüne naval base. How did it the officer’s career begin with him?
-               <br><br>
-               
-               “At first, I enlisted as a petty officer after conscription, so I was based on small ships and working as a U-man for roughly four years. After that I decided to attend officer candidate school and become real navy officer. 
-               
-                 <br><br>
-               <img src="commander_lehmann.jpg" class="float-right" style="width:100%" />
-            <p style="color:gray"><small> Commander Lehmann and Joni Hammar at the press conference in Rostock.</small></p>
-              
-<br><br>
-                My first appointment was as a watch officer of an auxiliary ship. I chose this career path because it was quite a big ship with a small crew which I like because there it’s more familiar with each other. 
-<br><br>
-                To become a commanding officer, you have to attend all the postings from third,- second,- and first officer. After exam and test, you get the permission to work as a commanding officer. After mine I was for four years the commanding officer of an auxiliary ship.
-<br><br>
-                After this time, I got to know posting here in a naval base officer because all the naval base officers have a profession in logistics. That is why the link between the auxiliary ship and the commanding officer. In three months from now I will switch the working place to Berlin where I will work in a HQ and work as an operations officer.”
-<br><br>
-               What are the ups and downs of working as a commander?
-               <br><br>
-               “The ups are working with different people from different professions. Working as a team is always a good idea and I couldn’t work alone. Teamwork gets new challenges and passes these as a team. I think that is really interesting and that is why I chose this path.
-<br><br>
-                The downs are always if you have to send bad news to your crew, to your soldiers, to your soulmates for example if something is going wrong and everything doesn’t work in a perfect manner. So, you always have to train.
-<br><br>
-                [The downs are] Even the hard times when you’re deployed roughly six to seven months away from family. But if you do it as a team, it is a little bit easier to pass these tests. “
-<br><br>
-               Holidays:
-               <br><br>
-               “Normally you get some two to four weeks holiday. Afterwards you go back to the ship and start all over again with training and receiving new crewmembers and then you go back to another deployment. So normally you have a couple of weeks to go back to your family and get some downtime. “
-<br><br>
-                Message for young people considering a career in the marines:
-               <br><br>
-               “I think it’s a good job and a safe job. Especially if you like to search and look for challenges - I think working in a military is always a challenge for you and your family - and if you would like to attend these tests and attend friendship of comrades. I think the good things are a lot more than the bad things. “
-               <br><br>
-                Now the waves are bashing on the Warnemünde’s sand coasts. A lighthouse sweeps over the black sea. The stars are shining and the last twilight fades into the open sea. 
-<br><br>
-                This was Hanse Sail Rostock as I experienced it. Thank you. 
-               
-               <br><br>
-               <img src="grossherzogin_elisabeth.jpeg" class="float-right" style="width:100%" />
-            <p style="color:gray"><small> Grossherzogin Elisabeth in the Rostock harbor.</small></p>
 
-               
-               
+            </div>
 
-               
-            <div class="col-sm-12 text-center">
-                <h2 class="text-center" >Read also</h2>
-                   <a class="btn btn-outline-secondary" align="center" style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px" href="Commander%20Lehmann.html">Interviewing commander Lehmann</a>
+            <div class="col">
+              <br>
+              <b>Written</b>
+              <p class="mb-0" style="color:#333">30.9.2024</p>
+            </div>
+            <div class="col">
+              <br>
+              <b>Reading time</b>
+              <p class="mb-0" style="color:#333">5 min</p>
+            </div>
+            <div class="col">
+
+            </div>
+
+
           </div>
-
-
-           </div>
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="masthead rounded" style="background-image: url('bima_suci_2.JPG');">
+          <div class="color-overlay d-flex justify-content-center centered align-items-center">
+            <h1>Hanse Sail Rostock</h1>
+            <br><br>
+
+            <div class="top-left">
+              <p style="color:gray"><small>Image © TZRW / Herbert Böhm</small></p>
+              After sailing onboard the Grossherzogin Elisabeth in the Tall Ships Races 2024, I arrive in Rostock with a
+              bus from Poland. After the last comradely goodbye with our ship’s cook, Uwe I enter the city.
+              <br><br>
+              After ordering one of the best kebabs that I’ve had during my relatively short life and finding a place to
+              think about where to be sleeping the night, I find the hotel Sonne in the very heart of the city.
+              <br><br>
+              Still, I feel something is missing. I leave the room – after being very cozy and satisfied with the
+              premises - out to the city. The old cobblestone street declines slowly and I can already smell the salty
+              water. Soon I find what I’m looking for: the harbor with lovely sailing ships. Here I feel like home.
+              <br><br>
+              <h2 class="text-center">Sailing</h2>
+
+              <br>
+
+              A sail ship arrives to Rostock with torn sails, many a brave ship follow. The mare opens the beer keg and
+              announces the 33th Hanse Sail began.
+              <br><br>
+              The festival area starts from the city harbor and continues all the way up to Warnemünde's sand beaches,
+              the fisher harbor, seafaring museum and the naval base Hohe Düne.
+              <br><br>
+              <img src="Plan_HanseSail_Rostock-1.jpg" class="float-right" style="width:100%" />
+              <p style="color:gray"><small>Map of the Hanse Sail Rostock 2024</small></p>
+
+              Walking along the city's dock is something that I could do forever. Swimming through the crowd I head
+              towards the ship Grossherzogin Elisabeth, that has come from Poland after finishing the last leg of The
+              Tall Ship Races 2024. [Mariehamn Finland - Szczecin Poland] I go to greet my mate, Konstantin Meyer. Let’s
+              ask the sailor: what is the sailing all about for him?
+              <br><br>
+              <b>Konstantin Meyer</b>
+              <br><br>
+              “Basically in 2022 I started my nautical studies – that’s when I started sailing at all. Since then, I
+              have been sailing in smaller boats and I’ve done a couple of 10-day sailing trips with Lissi. (The
+              nickname of Grossherzogin Elisabeth.) So generally, not a lot."
+              <br><br>
+              "We have the seafaring theory in school that we can put in practice onboard Lissi. That is something
+              remarkable about Elsfleth, not every nautical school has that."
+              <br><br>
+              "Sailing is different here than on a commercial vessel, but the knots are still important these days. As a
+              cadet on a commercial ship the sailors have a prejudice about you: as a European you can’t do knots, and
+              you don’t know how to paint or even do the rust chipping.
+              As a part of my apprenticeship, I was working on a gas tanker for three months. I joined the Gaschem
+              Atlantic in Brazil, and we went up the coast to USA then Mexico and then USA again. Our last voyage was to
+              Dunkirk, France where I left. Then I spent a night in Lübeck and went onboard a small general cargo vessel
+              for another three months."
+              <br><br>
+              <img src="konstantin_meyer.jpeg" class="float-right" style="width:100%" />
+              <p style="color:gray"><small> Meyer onboard the Gaschem Atlantic. </small></p>
+
+              "On Lissi you learn the knots, painting and rust chipping and you build a bridge towards the sailors
+              making it easier to connect. Then they are more willing to show you things and it’s nice to be a bit more
+              part of the crew with the experience you have gained sailing.”
+              <br><br>
+              “I recommend the Tall Ship Races and sailing onboard Lissi. It’s going to be a hard start if you don’t
+              speak German but even the nationals have to learn the many terms. You can learn a lot and it’s going to be
+              a lot of fun.
+              If you aren’t sure, give it a try. It’s not too expensive. Maybe just for a weekend trip and then you
+              already can get a feeling if it is for you. If it is, you can join a club so it doesn’t cost anything and
+              you can create a new passion. “
+              <br><br>
+              <b>Meeting the ship’s captain, Nils Karsten.</b>
+              <br><br>
+              “Usually, I’m working in a cruise ship doing cruises as a chief officer on deck and navigation. I
+              sail the Grossherzogin Elisabeth one to four times per year, because I’m also very active on another
+              museum ship in Cuxhaven. This takes also a lot of time and of course I have to also be a little at home,
+              while I’m already three months away from home because of my job.”
+              <br><br>
+              The captain also had a startup in Finland – in the partner land of the Hanse Sail 2024:
+              <br><br>
+              “I did the startup of the new Mein Schiff 1 and the new Mein Schiff 2 from the Turku shipyard in 2018 and
+              2019. Now this year they are just going to deliver Mein Schiff 7 also from Turku.
+              <br><br>
+              "We did the delivery and the commissioning. We went there to do the inspections of the vessel and checked
+              that everything was according to the contract. If it wasn’t the shipyard had to follow up and when they
+              did, we signed.”
+              <br><br>
+              <img src="captain_karsten.jpg" class="float-right" style="width:100%" />
+              <p style="color:gray"><small> Captain Nils Karsten and Joni Hammar onboard the Grossherzogin
+                  Elisabeth.</small></p>
+              <br><br>
+              “Basically, I inspected the marine department but not any passenger cabins. However, the outside areas are
+              a part of the deck department, so we inspected all the balconies for example. It’s also a hell of a work
+              in -20°C in the wintertime – I don’t need to tell you.” (warm laughter)
+              <br><br>
+              <b>Up's and down's of being a chief officer</b>
+              <br><br>
+              “The up is of course the responsibility, but you also have some freedom deciding what you can do with your
+              work and how you arrange your working time. Except the watches. For example, I did now three and a half
+              months of twelve to four watch. (working from 00-04 & 12-16) In the end, you’re just tired of course when you really can’t sleep
+              properly. You have the time to adjust but there’s always something going on during the day where you can
+              not sleep your six hours. “
+              <br><br>
+              <b>Message to the young about becoming a naval officer</b>
+              <br><br>
+              “I think sailing in general on cargo vessels has nothing to do with old romantic stuff which you can read
+              about long shore leaves and other stuff. Usually, the shorley in cargo vessels is very restricted and the
+              ports are very far outside [the cities] and there’s not really a chance to go outside. On cruise ships you
+              have the chance to go because you don’t have cargo operations that you need to observe."
+              <br><br>
+              “I still like to sail and what I would always recommend if somebody wanted to sail is, that they need to
+              have passion for it in order also to grow by themselves. I would not be able to handle a ship like Lissi,
+              unless I had put some effort in it and in the traditional way of sailing. This also helps very much for
+              understanding the maneuvering of the modern vessels."
+              <br><br>
+              What makes Hanse Sail remarkable, is to witness the great tall ships as they once again sail to the port.
+              To meet the men and women who sail the ships and enjoy the hospitality of the locals of Rostock.
+              <br><br>
+              In the bar the locals buy us many rounds making it hard to keep up. They the tell me the best off-sight
+              attractions of the 13th century Hanse city which keeps me occupied for two whole days. The locals save my
+              behind as my groceries fall in the pavement and the warm spirit just echoes from the man selling me a
+              bratwurst. Pleasant people I must say.
+              <br><br>
+
+              <h5 style="color:gray" class="text-center">Useful vocabulary [Ger - Fin]</h5>
+              <p style="color:gray" class="font-italic"><small></small>
+                - Moin! – Moi!
+                <br>
+                - Ich hätte ein grosses Fassbier – Yksi kylmä huurteinen
+                <br>
+                - Danke – Kiitos
+                <br>
+                - Bitte – Ole hyvä
+                <br>
+                - Prost! – Kippis!
+                <br>
+                - Ja / Nein – Joo / Ei
+              </p>
+
+              <h5 style="color:gray" class="text-center">Highlights of Hanse Sail</h5>
+              <p style="color:gray" class="font-italic"><small></small>
+                - Warnemündes great sandcoasts with their massive beach partys
+                <br>
+                - Over 200 performers on stage
+                <br>
+                - Over 100 sailing ships from 1800’s till this day open and free to visit
+                <br>
+                - Sail onboard as passenger, crew or just overnight in a ship
+                <br>
+                - The nightlife and many pubs of Rostock
+              </p>
+
+              <h5 style="color:gray" class="text-center">Specialities</h5>
+              <p style="color:gray" class="font-italic"><small></small>
+                - Smoker friendly city & bars
+                <br>
+                - Evident sailor spirit
+                <br>
+                - Hanse City form the 1200’s
+                <br>
+                - Pleasant coffee shops
+                <br>
+                - Affordable prices
+                <br>
+                - Stress free public transport – Bus & train tickets for the entire city are included in the city tax
+                <br>
+                - Partys till until morning
+                <br>
+                - Lots of street art
+              </p>
+
+              <br><br>
+
+              Later I’m privileged to meet commander Robert Lehmann of the Hohe Hüne naval base. How did it the
+              officer’s career begin with him?
+              <br><br>
+              <b>Commander Robert Lehmann</b>
+              <br><br>
+              “At first, I enlisted as a petty officer after conscription, so I was based on small ships and working as
+              a U-man for roughly four years. After that I decided to attend officer candidate school and become real
+              navy officer."
+
+              <br><br>
+              <img src="commander_lehmann.jpg" class="float-right" style="width:100%" />
+              <p style="color:gray"><small> Commander Lehmann and Joni Hammar at the press conference in
+                  Rostock.</small></p>
+
+              <br><br>
+              "My first appointment was as a watch officer of an auxiliary ship. I chose this career path because it was
+              quite a big ship with a small crew which I like because there it’s more familiar with each other."
+              <br><br>
+              "To become a commanding officer, you have to attend all the postings from the third,- the second,- to the first
+              officer. After exam and test, you get the permission to work as a commanding officer. After mine I was for
+              four years the commanding officer of an auxiliary ship."
+              <br><br>
+              "After this time, I got to know posting here in a naval base officer because all the naval base officers
+              have a profession in logistics. That is why the link between the auxiliary ship and the commanding
+              officer. In three months from now I will switch the working place to Berlin where I will work in a HQ and
+              work as an operations officer.”
+              <br><br>
+              <b>The up's and down's of working as a commander</b>
+              <br><br>
+              “The ups are working with different people from different professions. Working as a team is always a good
+              idea and I couldn’t work alone. Teamwork finds new challenges and passes these as a team. I think that is
+              really interesting and that is why I chose this path."
+              <br><br>
+              "The downs are always if you have to send bad news to your crew, to your soldiers, to your soulmates for
+              example if something is going wrong and everything doesn’t work in a perfect manner. So, you always have
+              to train."
+              <br><br>
+              "[The downs are] Even the hard times when you’re deployed roughly six to seven months away from family. But
+              if you do it as a team, it is a little bit easier to pass these tests.“
+              <br><br>
+              Holidays:
+              <br><br>
+              “Normally you get some two to four weeks holiday. Afterwards you go back to the ship and start all over
+              again with training and receiving new crewmembers and then you go back to another deployment. So normally
+              you have a couple of weeks to go back to your family and get some downtime. “
+              <br><br>
+              <b>Message for young people considering a career in the marines</b>
+              <br><br>
+              “I think it’s a good job and a safe job. Especially if you like to search and look for challenges - I
+              think working in a military is always a challenge for you and your family - and if you would like to
+              attend these tests and attend friendship of comrades. I think the good things are a lot more than the bad
+              things.“
+              <br><br>
+              Now the waves are bashing on the Warnemünde’s sand coasts. A lighthouse sweeps over the black sea. The
+              stars are shining and the last twilight fades into the open sea.
+              <br><br>
+              This was Hanse Sail Rostock as I experienced it. Thank you.
+
+              <br><br>
+              <img src="grossherzogin_elisabeth.jpeg" class="float-right" style="width:100%" />
+              <p style="color:gray"><small> Grossherzogin Elisabeth in the Rostock harbor.</small></p>
+
+
+
+
+              <br><br>
+              <div class="col-sm-12 text-center">
+                <h2 class="text-center">Read also</h2>
+                <h6 class="text-center">The full interview of commander Lehmann and the story of Groch Fock</h6>
+                <a class="btn btn-outline-secondary" align="center"
+                  style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px"
+                  href="Commander%20Lehmann.html">Interviewing commander Lehmann</a>
+              </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        -
+      </div>
     </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-         
- -                 </div>
-         </div>
-    
-       
-            
-     
-   
 
-</main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
-      <footer style="background-color:#f9f9f9;padding:50px;" class="blog-footer">
-  
-     
-       <a class="blog-header-logo text-black" href="#" >Virginia</a> <p>©2023</p> 
+
+
+
+
+  </main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer style="background-color:#f9f9f9;padding:50px;" class="blog-footer">
+
+
+    <a class="blog-header-logo text-black" href="#">Virginia</a>
+    <p>©2023</p>
     <img src="signaturef9f9f9.png" height="50" style="margin-top:-20px" /><br>
-     
-<div style="padding:0px;background-color:black;">
-    </div>
- 
-</footer>
-      
-      
-      
-      
-      
-      
-      <center>
-      
 
-    
+    <div style="padding:0px;background-color:black;">
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <center>
+
+
+
     <footer style="background-color:rgba(0,0,42,0.99);width:50;height:100%;">
 
-    <div class="nav-scroller py-1 mb-2" >
-    <nav class="nav d-flex justify-content-center" style="">
-   
-      <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="index.html"></a>
-         <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="Yhteystiedot.html"> Yhteystiedot </a>
-      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uudet%20artikkelit.html"> Uudet artikkelit </a>
-      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="index%20kopio.html"> Tilaa </a>
-      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="Juho%20Peltola.html"> Kouvola </a>
-      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uusi.html"> Yhteisö </a>
-    </nav>
-        
-  </div>
-  
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-center" style="">
 
-      </footer>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="index.html"></a>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="Yhteystiedot.html">
+            Yhteystiedot </a>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="uudet%20artikkelit.html">
+            Uudet artikkelit </a>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="index%20kopio.html"> Tilaa
+          </a>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="Juho%20Peltola.html">
+            Kouvola </a>
+          <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="uusi.html"> Yhteisö </a>
+        </nav>
 
-</center>
-    
-    
-  </body>
+      </div>
+
+
+    </footer>
+
+  </center>
+
+
+</body>
+
 </html>

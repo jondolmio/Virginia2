@@ -10,6 +10,8 @@ function calculatePrice(kpl) {
     return hinta.toFixed(2)
 }
 
+
+
 // tekee merkkijonon tyyliin "10 kpl, hinta 23.10€"
 function calculatePriceText(kpl) {  
     const hinta = calculatePrice(kpl)
