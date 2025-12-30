@@ -66,7 +66,7 @@
         <a class="link-secondary" href="#" aria-label="Search">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
         </a>
-        <a class="btn btn-sm btn-outline-secondary" style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px" href="index%20kopio.html">Tilaa</a>
+        <a class="btn btn-sm btn-outline-secondary" style="background-color:#E57200;color:white;border:white;padding-left:20px;padding-right:20px" href="tilaa.html">Tilaa</a>
       </div>
     </div>
   </header>
@@ -74,11 +74,11 @@
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-center">
         
-      <a style="margin-right:70px;text-decoration: none;"  class="p-2 link-secondary" href="uudet%20artikkelit.html">Uudet artikkelit </a>
-      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="uusi.html"> Toimitus </a>
-      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="index%20kopio.html"> Tilaamisesta </a>
-      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="index%20kopio.html"> Jälleenmyynti</a>
-      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="uusi.html"> Yhteisö</a>
+      <a style="margin-right:70px;text-decoration: none;"  class="p-2 link-secondary" href="selaa.html">Uudet artikkelit </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="toimitus.html"> Toimitus </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="tilaa.html"> Tilaamisesta </a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="tilaa.html"> Jälleenmyynti</a>
+      <a style="margin-right:70px;text-decoration: none;"class="p-2 link-secondary" href="toimitus.html"> Yhteisö</a>
       
     </nav>
   </div>
@@ -103,13 +103,13 @@
     </div>
     <div class="col-sm">
         
-<h1>L & M vihreä kautta aikojen </h1>
+<h1>L&M vihreä kautta aikojen </h1>
  
-L & M on yksi amerikkalaisten savukkeiden suuria nimiä, joka on niittänyt erityistä suosiota Euroopassa ja Venäjällä.  <br><br>
+L&M on yksi amerikkalaisten savukkeiden suuria nimiä, joka on niittänyt erityistä suosiota Euroopassa ja Venäjällä.  <br><br>
  
 Mentoli tupakka on nykyään vain haave kotimaiselle kuluttajalle, eikä kunnon mentolitupakkaa ole saanut kaupoista vuosiin. Jotain vihreää mönjää tosin sai vielä viime aikoina tupakkahyllyltä, mutta mentoliksi sitä ei voisi kutsua. Eihän askeissa edes mainittu mentolia, tuote oli enää erikoiselle maistuva ”green label”. Tänä vuonna voimaan astunut lakiuudistus puolestaan kielsi tupakalta ”tunnusomaisen aromin,” minkä johdosta viimeinenkin mentolin häive on kadonnut vihreissä kuoseissa myytävästä tuotteesta.  <br><br>
  
-Mitä tapahtuikaan mentolitupakalle, sen tietää pitkän linjan kuluttaja. Meille, jotka emme ole todistaneet rapautumista, on arkeologia keinomme tietää. Vihreän tupakan tarinaa on jäänyt meille Virginian toimitukseen kertomaan kolme muinaisjäännöstä: Vanha venäläinen-, vanhahko suomalainen- ja uusi suomalainen L & M Vihreä aski. <br> 
+Mitä tapahtuikaan mentolitupakalle, sen tietää pitkän linjan kuluttaja. Meille, jotka emme ole todistaneet rapautumista, on arkeologia keinomme tietää. Vihreän tupakan tarinaa on jäänyt meille Virginian toimitukseen kertomaan kolme muinaisjäännöstä: Vanha venäläinen-, vanhahko suomalainen- ja uusi suomalainen L&M Vihreä aski. <br> 
  
 Vanha venäläinen aski on vuoden 2000 tienoilta. Sen ulkoasu on harmoninen ja ylpeä, varoitustekstit eivät hypi silmille, graafinen suunnittelu tuo askiin arvokasta tunnelmaa. Aski on asianmukainen sen kertoessa tervan ja nikotiinin määrän – jotka ovat 12mg ja 0,9mg – mutta niiden ohessa myös muutaman sanasen tupakan terveyshaitoista. Savukkeet ovat valmistettu Venäjällä. <br><br>
  
@@ -124,7 +124,7 @@ Uusin vihreä aski on kieltämättä saavuttanut harmonian ulkoasussaan ja - vai
  
 Jos em. ”tupakkaa” kuitenkin kiskoisi barbaarisesti kuin huonoa tislettä, välinpitämättömänä ohuttakin latteammasta mausta ja henkiteitä sabotoivasta raapimisesta, voisi siitä kenties saada jonkinlaisen tuntemuksen, mutta siihen en itsekunnioituksesta ryhdy.  <br><br>
  
-Mielisanontani ”tupakka on aina tupakkaa” on kyllä kokenut kolauksen, jos edellä kuvailtu tuore L & M vihreä on nykystandardeilla tupakkaa, saati hyvää sellaista. Kauheaa tupakkaa on ollut varmasti aikojen alusta asti, ensimmäisen maailmansodan britti veteraanitkin valittelivat hevosenlantamaista makua rivistön kessussa, mutta en rehellisesti usko tuon lämän vihreän tupakkaa nähneenkään. Jatkettua paperia se on.  
+Mielisanontani ”tupakka on aina tupakkaa” on kyllä kokenut kolauksen, jos edellä kuvailtu tuore L&M vihreä on nykystandardeilla tupakkaa, saati hyvää sellaista. Kauheaa tupakkaa on ollut varmasti aikojen alusta asti, ensimmäisen maailmansodan britti veteraanitkin valittelivat hevosenlantamaista makua rivistön kessussa, mutta en rehellisesti usko tuon lämän vihreän tupakkaa nähneenkään. Jatkettua paperia se on.  
     </div>
   </div>
 </div>
@@ -154,11 +154,11 @@ Mielisanontani ”tupakka on aina tupakkaa” on kyllä kokenut kolauksen, jos e
     <div class="nav-scroller py-1 mb-2" >
     <nav class="nav d-flex justify-content-center" style="">
         
-      <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="uudet%20artikkelit.html">Uudet artikkelit </a>
+      <a style="color:white;text-decoration: none;margin-right:70px;" class="p-2" href="selaa.html">Uudet artikkelit </a>
       <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Toimitus </a>
       <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Tilaamisesta </a>
       <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="#"> Jälleenmyynti</a>
-      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="uusi.html"> Yhteisö</a>
+      <a style="color:white;text-decoration: none;margin-right:70px;"class="p-2" href="toimitus.html"> Yhteisö</a>
       
     </nav>
         
