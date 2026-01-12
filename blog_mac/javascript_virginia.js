@@ -1,5 +1,5 @@
 // laskee hinnan kappalemäärälle. Palauttaa esim. 10.55
-function laskeHinta(kpl) {
+function calculatePrice(kpl) {
     let hinta = 0
         
     if (kpl > 0 && kpl < 4) hinta = 5.31 * kpl
