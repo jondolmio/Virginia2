@@ -2,8 +2,8 @@
 function calculatePrice(kpl) {
     let hinta = 0
         
-    if (kpl > 0 && kpl < 4) hinta = 5.31 * kpl
-    if (kpl >= 4 && kpl < 10) hinta = 4.41 * kpl
+    if (kpl > 0 && kpl < 4) hinta = 5.90 * kpl
+    if (kpl >= 4 && kpl < 10) hinta = 4.90 * kpl
     if (kpl >= 10 && kpl < 20) hinta = 3.90 * kpl
     if (kpl >= 20 && kpl < 25) hinta = 2.90 * kpl
         
